@@ -1,0 +1,121 @@
+body{
+    /* background: red; */
+    
+    margin: 0;
+    padding: 0;
+    background: hsl(30, 38%, 92%);
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+}
+.card{
+    /* padding: 10% 29%; */
+    margin: 12% 10%;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.img .desktop{
+    max-width: 300px;
+    height: 450px;
+}
+.img .mobile{
+    display: none;
+}
+.detail{
+    /* padding: 15px 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 32px;
+}
+.sm,
+.md,
+.lg,
+h1,
+p{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.sm{
+    font-size: 12px;
+    letter-spacing: 5px;
+} 
+.md{
+    
+    
+    font-size: 14px;
+    line-height: 23px;
+}
+.lg,
+h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    
+}
+.detail .price{
+    display: flex;
+    justify-content: space-between;
+    max-width: 195px;
+    height: 30px;
+}
+.price p{
+    padding-top: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+}
+button{
+    width: 235px;
+    height: 48px;
+    background: hsl(158, 36%, 37%);
+    color: #FFFFFF;
+    font-weight: 700 ;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.attribution{
+    /* position: relative;
+    top: 314px; */
+    font-size: 15px; 
+    text-align: center;
+    /* margin-top: 10%; */
+}
+.attribution a {
+    /* color: hsl(228, 45%, 44%); */
+    color: hsl(158, 36%, 37%);
+}
+
+
+
+@media (max-width: 670px) {
+    .card{
+        flex-direction: column;
+        max-width: max-content;
+        min-height: 800px;
+        max-width: 90%;
+    }
+    .detail{
+        justify-content: space-evenly;
+        min-height: 442px;
+    }
+    .img .desktop{
+        display: none;
+    }
+    .img .mobile{
+        display: block;
+        
+        max-width: 100%;
+    }
+}
